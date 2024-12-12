@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma de Imprimări 3D</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #101010; /* Fundal negru */
+            color: #ddd;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #007bff, #00b0ff);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.25rem;
+            font-weight: lighter;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            margin: 0 2rem;
+            font-weight: bold;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://www.3dprint.com/wp-content/uploads/2020/12/3dprinting-business.jpg') no-repeat center/cover;
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+            background-size: cover;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 3rem 2rem;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .service {
+            background-color: #222;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 30%;
+            margin: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+        .service h3 {
+            color: #00b0ff;
+            margin-bottom: 1rem;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 3rem 2rem;
+        }
+        .gallery-item {
+            width: 30%;
+            margin: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #222;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #333;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services, .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service, .gallery-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Logo -->
+    <header>
+        <!-- Logo image URL -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/3D_printing_logo.svg/1200px-3D_printing_logo.svg.png" alt="Firma Imprimare 3D" width="200"/>
+        <h1>Firma de Imprimări 3D</h1>
+        <p>Transformăm ideile tale în realitate cu tehnologia imprimării 3D!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#servicii">Servicii</a>
+        <a href="#about">Despre Noi</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#contact">Contact</a>
+        <a href="#harta">Locație</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Descoperă Viitorul Imprimării 3D</h1>
+        <p>Prototipuri, Piese Personalizate și Soluții Tehnologice Avansate</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicii" class="services">
+        <div class="service">
+            <h3>Prototipuri 3D</h3>
+            <p>Creăm prototipuri detaliate pentru orice proiect.</p>
+        </div>
+        <div class="service">
+            <h3>Piese Personalizate</h3>
+            <p>Fabricăm piese conform cerințelor tale unice.</p>
+        </div>
+        <div class="service">
+            <h3>Consultanță Tehnică</h3>
+            <p>Oferim suport și consultanță pentru optimizarea proiectelor tale.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>Despre Noi</h2>
+        <p>Suntem o echipă de profesioniști pasionați de tehnologia imprimării 3D. Ajutăm clienții să își aducă ideile la viață, oferind soluții personalizate și de înaltă calitate.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery">
+        <!-- Imagini produse 3D -->
+        <div class="gallery-item">
+            <img src="https://www.3dprint.com/wp-content/uploads/2020/12/3d-printing-examples.jpg" alt="Produs 3D 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/3D_printer_and_printer_model.jpg" alt="Produs 3D 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/3D-printing-of-objects.jpg" alt="Produs 3D 3">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contactează-ne</h2>
+        <p>Adresa: Sat Pădureni, Județ Timiș</p>
+        <p>Email: remusnegru@yahoo.com</p>
+    </section>
+
+    <!-- Location Section (Google Maps Integration) -->
+    <section id="harta">
+        <h2>Locația noastră</h2>
+        <iframe 
+            width="100%" 
+            height="450" 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10846.177205586228!2d21.464695!3d45.855398!3m2!1i1024!2i768!4f13.1!5m2!1sen!2sro" 
+            frameborder="0" 
+            style="border:0" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Firma de Imprimări 3D | Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+</html>
